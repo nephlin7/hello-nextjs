@@ -13,7 +13,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\gmartinez\\Documents\\GMartinez\\PracticeApps\\hello-next\\components\\Header.js";
 
 
 var linkStyle = {
@@ -21,40 +20,14 @@ var linkStyle = {
 };
 
 var Header = function Header() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    style: linkStyle,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
+    style: linkStyle
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
+    href: "/about"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    style: linkStyle,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
+    style: linkStyle
   }, "About")));
 };
 
@@ -74,7 +47,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-var _jsxFileName = "C:\\Users\\gmartinez\\Documents\\GMartinez\\PracticeApps\\hello-next\\components\\MyLayout.js";
 
 
 var LayoutStyle = {
@@ -85,19 +57,8 @@ var LayoutStyle = {
 
 var MyLayout = function MyLayout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: LayoutStyle,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }), props.children);
+    style: LayoutStyle
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), props.children);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MyLayout);
@@ -10901,7 +10862,7 @@ var Index = function Index(props) {
     });
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     styleId: "740275346",
-    css: "h1.jsx-740275346,a.jsx-740275346{font-family:\"Arial\";}ul.jsx-740275346{padding:0;}li.jsx-740275346{list-style:none;margin:5px 0;}a.jsx-740275346{-webkit-text-decoration:none;text-decoration:none;color:blue;}a.jsx-740275346:hover{opacity:0.6;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcZ21hcnRpbmV6XFxEb2N1bWVudHNcXEdNYXJ0aW5lelxcUHJhY3RpY2VBcHBzXFxoZWxsby1uZXh0XFxwYWdlc1xcaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBdUMwQixBQUd1QyxBQUlWLEFBSU0sQUFLSyxBQUtULFVBYmQsRUFjQSxJQVZlLElBUmYsU0FTQSxxQkFJYSxXQUNiIiwiZmlsZSI6IkM6XFxVc2Vyc1xcZ21hcnRpbmV6XFxEb2N1bWVudHNcXEdNYXJ0aW5lelxcUHJhY3RpY2VBcHBzXFxoZWxsby1uZXh0XFxwYWdlc1xcaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGF5b3V0IGZyb20gJy4uL2NvbXBvbmVudHMvTXlMYXlvdXQnXHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcclxuLy8gaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCdcclxuXHJcblxyXG5cclxuXHJcbmNvbnN0IFBvc3RMaW5rID0gKHsgcG9zdCB9KSA9PiAoXHJcbiAgICA8bGk+XHJcbiAgICAgIDxMaW5rIGFzPXtgL3Bvc3QvJHtwb3N0LmlkfWB9IGhyZWY9e2AvcG9zdD90aXRsZT0ke3Bvc3QudGl0bGV9YH0+XHJcbiAgICAgICAgPGE+e3Bvc3QudGl0bGV9PC9hPlxyXG4gICAgICA8L0xpbms+XHJcbiAgICA8L2xpPlxyXG4gIClcclxuICAgIC8vIDxMYXlvdXQ+XHJcbiAgICAvLyAgICAgPGgxPk15IEJsb2c8L2gxPlxyXG4gICAgLy8gICAgIDx1bD5cclxuICAgIC8vICAgICAgICAgPFBvc3RMaW5rIHNsdWc9XCJoZWxsby1uZXh0XCIgdGl0bGU9XCJIZWxsbyBOZXh0LmpzXCIvPlxyXG4gICAgLy8gICAgICAgICA8UG9zdExpbmsgc2x1Zz1cImxlYXJuLW5leHQtanNcIiB0aXRsZT1cIkxlYXJuIE5leHQuanMgaXMgYXdlc29tZVwiLz5cclxuICAgIC8vICAgICAgICAgPFBvc3RMaW5rIHNsdWc9XCJkZXBsb3ktYXBwLXdpdGgtWmVpdFwiIHRpdGxlPVwiRGVwbG95IGFwcHMgd2l0aCBaZWl0XCIvPlxyXG4gICAgLy8gICAgIDwvdWw+XHJcbiAgICAvLyA8L0xheW91dD5cclxuXHJcbiAgICBmdW5jdGlvbiBnZXRQb3N0cyAoKSB7XHJcbiAgICAgICAgcmV0dXJuIFtcclxuICAgICAgICAgIHsgaWQ6ICdoZWxsby1uZXh0anMnLCB0aXRsZTogJ0hlbGxvIE5leHQuanMnfSxcclxuICAgICAgICAgIHsgaWQ6ICdsZWFybi1uZXh0anMnLCB0aXRsZTogJ0xlYXJuIE5leHQuanMgaXMgYXdlc29tZSd9LFxyXG4gICAgICAgICAgeyBpZDogJ2RlcGxveS1uZXh0anMnLCB0aXRsZTogJ0RlcGxveSBhcHBzIHdpdGggWkVJVCd9LFxyXG4gICAgICAgIF1cclxuICAgICAgfVxyXG4gICAgICBcclxuICAgIGNvbnN0IEluZGV4ID0gKHByb3BzKSA9PiAoXHJcbiAgICAgICAgICAgIDxMYXlvdXQ+XHJcbiAgICAgICAgICAgICAgPGgxPk15IEJsb2c8L2gxPlxyXG4gICAgICAgICAgICAgIDx1bD5cclxuICAgICAgICAgICAgICAgIHtnZXRQb3N0cygpLm1hcCgocG9zdCkgPT4gKFxyXG4gICAgICAgICAgICAgICAgICA8UG9zdExpbmsga2V5PXtwb3N0LmlkfSBwb3N0PXtwb3N0fS8+XHJcbiAgICAgICAgICAgICAgICApKX1cclxuICAgICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAgICAgICAgIGgxLCBhIHtcclxuICAgICAgICAgICAgICAgICAgZm9udC1mYW1pbHk6IFwiQXJpYWxcIjtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgdWwge1xyXG4gICAgICAgICAgICAgICAgICBwYWRkaW5nOiAwO1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICBsaSB7XHJcbiAgICAgICAgICAgICAgICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICAgICAgICAgICAgICAgIG1hcmdpbjogNXB4IDA7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICBcclxuICAgICAgICAgICAgICAgIGEge1xyXG4gICAgICAgICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgICAgICAgICAgICAgICAgIGNvbG9yOiBibHVlO1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICBhOmhvdmVyIHtcclxuICAgICAgICAgICAgICAgICAgb3BhY2l0eTogMC42O1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgIGB9PC9zdHlsZT5cclxuICAgICAgICAgICAgPC9MYXlvdXQ+XHJcbiAgICAgICAgICBcclxuICAgICAgICAvLyA8TGF5b3V0PlxyXG4gICAgICAgIC8vICAgPGgxPkJhdG1hbiBUViBTaG93czwvaDE+XHJcbiAgICAgICAgLy8gICAgPHVsPlxyXG4gICAgICAgIC8vICAgICB7cHJvcHMuc2hvd3MubWFwKCh7c2hvd30pID0+IChcclxuICAgICAgICAvLyAgICAgICA8bGkga2V5PXtzaG93LmlkfT5cclxuICAgICAgICAvLyAgICAgICAgIDxMaW5rIGFzPXtgL3Bvc3QvJHtzaG93LmlkfWB9IGhyZWY9e2AvcG9zdD9pZD0ke3Nob3cuaWR9YH0+XHJcbiAgICAgICAgLy8gICAgICAgICAgIDxhPntzaG93Lm5hbWV9PC9hPlxyXG4gICAgICAgIC8vICAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgIC8vICAgICAgIDwvbGk+XHJcbiAgICAgICAgLy8gICAgICkpfVxyXG4gICAgICAgIC8vICAgPC91bD4gXHJcbiAgICAgICAgLy8gPC9MYXlvdXQ+XHJcbiAgICAgIClcclxuICAgICAgXHJcbiAgICAvLyAgIEluZGV4LmdldEluaXRpYWxQcm9wcyA9IGFzeW5jIGZ1bmN0aW9uKCkge1xyXG4gICAgLy8gICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCdodHRwczovL2FwaS50dm1hemUuY29tL3NlYXJjaC9zaG93cz9xPWJhdG1hbicpXHJcbiAgICAvLyAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKClcclxuICAgICAgXHJcbiAgICAvLyAgICAgY29uc29sZS5sb2coYFNob3cgZGF0YSBmZXRjaGVkLiBDb3VudDogJHtkYXRhLmxlbmd0aH1gKVxyXG4gICAgICBcclxuICAgIC8vICAgICByZXR1cm4ge1xyXG4gICAgLy8gICAgICAgc2hvd3M6IGRhdGFcclxuICAgIC8vICAgICB9XHJcbiAgICAvLyAgIH1cclxuICAgICAgXHJcbiAgICAgIGV4cG9ydCBkZWZhdWx0IEluZGV4Il19 */\n/*@ sourceURL=C:\\Users\\gmartinez\\Documents\\GMartinez\\PracticeApps\\hello-next\\pages\\index.js */"
+    css: "h1.jsx-740275346,a.jsx-740275346{font-family:\"Arial\";}ul.jsx-740275346{padding:0;}li.jsx-740275346{list-style:none;margin:5px 0;}a.jsx-740275346{-webkit-text-decoration:none;text-decoration:none;color:blue;}a.jsx-740275346:hover{opacity:0.6;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcZ2VyYWxkN1xcRGVza3RvcFxcaGVsbG8tbmV4dGpzXFxwYWdlc1xcaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBdUMwQixBQUd1QyxBQUlWLEFBSU0sQUFLSyxBQUtULFVBYmQsRUFjQSxJQVZlLElBUmYsU0FTQSxxQkFJYSxXQUNiIiwiZmlsZSI6IkM6XFxVc2Vyc1xcZ2VyYWxkN1xcRGVza3RvcFxcaGVsbG8tbmV4dGpzXFxwYWdlc1xcaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGF5b3V0IGZyb20gJy4uL2NvbXBvbmVudHMvTXlMYXlvdXQnXHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcclxuLy8gaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCdcclxuXHJcblxyXG5cclxuXHJcbmNvbnN0IFBvc3RMaW5rID0gKHsgcG9zdCB9KSA9PiAoXHJcbiAgICA8bGk+XHJcbiAgICAgIDxMaW5rIGFzPXtgL3Bvc3QvJHtwb3N0LmlkfWB9IGhyZWY9e2AvcG9zdD90aXRsZT0ke3Bvc3QudGl0bGV9YH0+XHJcbiAgICAgICAgPGE+e3Bvc3QudGl0bGV9PC9hPlxyXG4gICAgICA8L0xpbms+XHJcbiAgICA8L2xpPlxyXG4gIClcclxuICAgIC8vIDxMYXlvdXQ+XHJcbiAgICAvLyAgICAgPGgxPk15IEJsb2c8L2gxPlxyXG4gICAgLy8gICAgIDx1bD5cclxuICAgIC8vICAgICAgICAgPFBvc3RMaW5rIHNsdWc9XCJoZWxsby1uZXh0XCIgdGl0bGU9XCJIZWxsbyBOZXh0LmpzXCIvPlxyXG4gICAgLy8gICAgICAgICA8UG9zdExpbmsgc2x1Zz1cImxlYXJuLW5leHQtanNcIiB0aXRsZT1cIkxlYXJuIE5leHQuanMgaXMgYXdlc29tZVwiLz5cclxuICAgIC8vICAgICAgICAgPFBvc3RMaW5rIHNsdWc9XCJkZXBsb3ktYXBwLXdpdGgtWmVpdFwiIHRpdGxlPVwiRGVwbG95IGFwcHMgd2l0aCBaZWl0XCIvPlxyXG4gICAgLy8gICAgIDwvdWw+XHJcbiAgICAvLyA8L0xheW91dD5cclxuXHJcbiAgICBmdW5jdGlvbiBnZXRQb3N0cyAoKSB7XHJcbiAgICAgICAgcmV0dXJuIFtcclxuICAgICAgICAgIHsgaWQ6ICdoZWxsby1uZXh0anMnLCB0aXRsZTogJ0hlbGxvIE5leHQuanMnfSxcclxuICAgICAgICAgIHsgaWQ6ICdsZWFybi1uZXh0anMnLCB0aXRsZTogJ0xlYXJuIE5leHQuanMgaXMgYXdlc29tZSd9LFxyXG4gICAgICAgICAgeyBpZDogJ2RlcGxveS1uZXh0anMnLCB0aXRsZTogJ0RlcGxveSBhcHBzIHdpdGggWkVJVCd9LFxyXG4gICAgICAgIF1cclxuICAgICAgfVxyXG4gICAgICBcclxuICAgIGNvbnN0IEluZGV4ID0gKHByb3BzKSA9PiAoXHJcbiAgICAgICAgICAgIDxMYXlvdXQ+XHJcbiAgICAgICAgICAgICAgPGgxPk15IEJsb2c8L2gxPlxyXG4gICAgICAgICAgICAgIDx1bD5cclxuICAgICAgICAgICAgICAgIHtnZXRQb3N0cygpLm1hcCgocG9zdCkgPT4gKFxyXG4gICAgICAgICAgICAgICAgICA8UG9zdExpbmsga2V5PXtwb3N0LmlkfSBwb3N0PXtwb3N0fS8+XHJcbiAgICAgICAgICAgICAgICApKX1cclxuICAgICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAgICAgICAgIGgxLCBhIHtcclxuICAgICAgICAgICAgICAgICAgZm9udC1mYW1pbHk6IFwiQXJpYWxcIjtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgdWwge1xyXG4gICAgICAgICAgICAgICAgICBwYWRkaW5nOiAwO1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICBsaSB7XHJcbiAgICAgICAgICAgICAgICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICAgICAgICAgICAgICAgIG1hcmdpbjogNXB4IDA7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICBcclxuICAgICAgICAgICAgICAgIGEge1xyXG4gICAgICAgICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgICAgICAgICAgICAgICAgIGNvbG9yOiBibHVlO1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICBhOmhvdmVyIHtcclxuICAgICAgICAgICAgICAgICAgb3BhY2l0eTogMC42O1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgIGB9PC9zdHlsZT5cclxuICAgICAgICAgICAgPC9MYXlvdXQ+XHJcbiAgICAgICAgICBcclxuICAgICAgICAvLyA8TGF5b3V0PlxyXG4gICAgICAgIC8vICAgPGgxPkJhdG1hbiBUViBTaG93czwvaDE+XHJcbiAgICAgICAgLy8gICAgPHVsPlxyXG4gICAgICAgIC8vICAgICB7cHJvcHMuc2hvd3MubWFwKCh7c2hvd30pID0+IChcclxuICAgICAgICAvLyAgICAgICA8bGkga2V5PXtzaG93LmlkfT5cclxuICAgICAgICAvLyAgICAgICAgIDxMaW5rIGFzPXtgL3Bvc3QvJHtzaG93LmlkfWB9IGhyZWY9e2AvcG9zdD9pZD0ke3Nob3cuaWR9YH0+XHJcbiAgICAgICAgLy8gICAgICAgICAgIDxhPntzaG93Lm5hbWV9PC9hPlxyXG4gICAgICAgIC8vICAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgIC8vICAgICAgIDwvbGk+XHJcbiAgICAgICAgLy8gICAgICkpfVxyXG4gICAgICAgIC8vICAgPC91bD4gXHJcbiAgICAgICAgLy8gPC9MYXlvdXQ+XHJcbiAgICAgIClcclxuICAgICAgXHJcbiAgICAvLyAgIEluZGV4LmdldEluaXRpYWxQcm9wcyA9IGFzeW5jIGZ1bmN0aW9uKCkge1xyXG4gICAgLy8gICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCdodHRwczovL2FwaS50dm1hemUuY29tL3NlYXJjaC9zaG93cz9xPWJhdG1hbicpXHJcbiAgICAvLyAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKClcclxuICAgICAgXHJcbiAgICAvLyAgICAgY29uc29sZS5sb2coYFNob3cgZGF0YSBmZXRjaGVkLiBDb3VudDogJHtkYXRhLmxlbmd0aH1gKVxyXG4gICAgICBcclxuICAgIC8vICAgICByZXR1cm4ge1xyXG4gICAgLy8gICAgICAgc2hvd3M6IGRhdGFcclxuICAgIC8vICAgICB9XHJcbiAgICAvLyAgIH1cclxuICAgICAgXHJcbiAgICAgIGV4cG9ydCBkZWZhdWx0IEluZGV4Il19 */\n/*@ sourceURL=C:\\Users\\gerald7\\Desktop\\hello-nextjs\\pages\\index.js */"
   })) // <Layout>
   //   <h1>Batman TV Shows</h1>
   //    <ul>
