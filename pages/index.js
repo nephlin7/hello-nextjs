@@ -1,13 +1,13 @@
 import Layout from '../components/MyLayout'
 import Link from 'next/link'
-// import fetch from 'isomorphic-unfetch'
-
+import fetch from 'isomorphic-unfetch'
+import NextSeo from 'next-seo';
 
 
 
 const PostLink = ({ post }) => (
     <li>
-      <Link as={`/post/${post.id}`} href={`/post?title=${post.title}`}>
+      <Link as={`/post?id=${post.id}`} href={`/post?title=${post.title}`}>
         <a>{post.title}</a>
       </Link>
     </li>
@@ -30,13 +30,32 @@ const PostLink = ({ post }) => (
       }
       
     const Index = (props) => (
+
             <Layout>
+            <NextSeo
+      config={{
+        title: 'Index Page',
+        description: 'Description Index Page',
+        canonical: 'https://www.canonical.ie/Index',
+      }}
+    />
               <h1>My Blog</h1>
               <ul>
                 {getPosts().map((post) => (
                   <PostLink key={post.id} post={post}/>
                 ))}
               </ul>
+
+                      //   <h1>Batman TV Shows</h1>
+           <ul>
+            {props.shows.map(({show}) => (
+              <li key={show.id}>
+                <Link as={`/post?id=${show.id}`} href={`/post?id=${show.id}`}>
+                 <a>{show.name}</a>
+                </Link>
+              </li>
+            ))}
+          </ul> 
               <style jsx>{`
                 h1, a {
                   font-family: "Arial";
@@ -76,15 +95,15 @@ const PostLink = ({ post }) => (
         // </Layout>
       )
       
-    //   Index.getInitialProps = async function() {
-    //     const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
-    //     const data = await res.json()
+       Index.getInitialProps = async function() {
+         const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
+         const data = await res.json()
       
-    //     console.log(`Show data fetched. Count: ${data.length}`)
+         console.log(`Show data fetched. Count: ${data.length}`)
       
-    //     return {
-    //       shows: data
-    //     }
-    //   }
+         return {
+           shows: data
+         }
+       }
       
       export default Index

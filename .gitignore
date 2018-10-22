@@ -22,6 +22,7 @@ yarn-error.log*
 
 # Build Output
 .next
+/.next
 .vscode
 .DS_Store
 /out

@@ -4,9 +4,16 @@ import fetch from 'isomorphic-unfetch'
 import {withRouter} from 'next/router'
 import Markdown from 'react-markdown'
 
-export default withRouter((props) => (
+import ReactHtmlParser from 'react-html-parser';
+
+
+const Post  = withRouter((props) => (
     <Layout>
-     <h1>{props.router.query.title}</h1>
+        <h1>{ props.title }</h1>
+        <h1>{ props.show.name } </h1>
+        <p>{ ReactHtmlParser(props.show.summary) }</p>
+        <img src={ props.show.image } /> 
+
      <div className="markdown">
        <Markdown source={`
   This is our blog post.
@@ -49,15 +56,14 @@ export default withRouter((props) => (
 //        <img src={props.show.image.medium}/> */}
 //     </Layout>
 // )
+ Post.getInitialProps = async function (context) {
+   const { id } = context.query
+  const res = await fetch(`https://api.tvmaze.com/shows/${id}`)
+ const show = await res.json()
 
-// Post.getInitialProps = async function (context) {
-//   const { id } = context.query
-//   const res = await fetch(`https://api.tvmaze.com/shows/${id}`)
-//   const show = await res.json()
+  console.log(`Fetched show: ${show.name}`)
 
-//   console.log(`Fetched show: ${show.name}`)
+  return { show }
+ }
 
-//   return { show }
-// }
-
-// export default Post
+ export default Post

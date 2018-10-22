@@ -2,6 +2,7 @@ import Header from './Header'
 
 
 
+
 const LayoutStyle =  {
     margin: 20,
     padding: 20,
