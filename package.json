@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
+<<<<<<< HEAD
     "start": "npm run build && cross-env NODE_ENV=production node server.js",
+=======
+    "start": "NODE_ENV=production node server.js",
+>>>>>>> a437230c162e43f98937627ba3f3e75c9a717849
     "export": "npm run build && next export"
   },
   "keywords": [],
