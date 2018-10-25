@@ -21,6 +21,9 @@ const Post  = withRouter((props) => (
                   url: 'https://g7nextjs.herokuapp.com/about',
                   title: `${ props.show.name }`,
                   description: `${ props.show.summary.substring(0, 100)  + "..." }`,
+                  images: [
+                    { url: `${ props.show.image.medium }` },
+                  ],
                 },
               }}
             />
