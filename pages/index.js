@@ -3,32 +3,6 @@ import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import NextSeo from 'next-seo';
 
-
-
-const PostLink = ({ post }) => (
-    <li>
-      <Link as={`/post?id=${post.id}`} href={`/post?title=${post.title}`}>
-        <a>{post.title}</a>
-      </Link>
-    </li>
-  )
-    // <Layout>
-    //     <h1>My Blog</h1>
-    //     <ul>
-    //         <PostLink slug="hello-next" title="Hello Next.js"/>
-    //         <PostLink slug="learn-next-js" title="Learn Next.js is awesome"/>
-    //         <PostLink slug="deploy-app-with-Zeit" title="Deploy apps with Zeit"/>
-    //     </ul>
-    // </Layout>
-
-    function getPosts () {
-        return [
-          { id: 'hello-nextjs', title: 'Hello Next.js'},
-          { id: 'learn-nextjs', title: 'Learn Next.js is awesome'},
-          { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT'},
-        ]
-      }
-      
     const Index = (props) => (
 
             <Layout>
@@ -39,15 +13,24 @@ const PostLink = ({ post }) => (
         canonical: 'https://www.canonical.ie/Index',
       }}
     />
-              <h1>My Blog</h1>
-              <ul>
-                {getPosts().map((post) => (
-                  <PostLink key={post.id} post={post}/>
-                ))}
-              </ul>
-
-                      //   <h1>Batman TV Shows</h1>
-           <ul>
+<section className="hero is-primary">
+  <div className="hero-body">
+    <div className="container">
+      <h1 className="title">
+      Batman 
+      </h1>
+      <h2 className="subtitle">
+      TV Shows
+      </h2>
+    </div>
+  </div>
+</section>
+<br />
+<div className="container">
+  <div className="notification box-shadow">
+  <section className="columns">
+    <div className="column">
+    <ul>
             {props.shows.map(({show}) => (
               <li key={show.id}>
                 <Link as={`/post?id=${show.id}`} href={`/post?id=${show.id}`}>
@@ -56,43 +39,43 @@ const PostLink = ({ post }) => (
               </li>
             ))}
           </ul> 
-              <style jsx>{`
-                h1, a {
-                  font-family: "Arial";
-                }
-          
-                ul {
-                  padding: 0;
-                }
-          
-                li {
-                  list-style: none;
-                  margin: 5px 0;
-                }
-          
-                a {
-                  text-decoration: none;
-                  color: blue;
-                }
-          
-                a:hover {
-                  opacity: 0.6;
-                }
-              `}</style>
-            </Layout>
-          
-        // <Layout>
-        //   <h1>Batman TV Shows</h1>
-        //    <ul>
-        //     {props.shows.map(({show}) => (
-        //       <li key={show.id}>
-        //         <Link as={`/post/${show.id}`} href={`/post?id=${show.id}`}>
-        //           <a>{show.name}</a>
-        //         </Link>
-        //       </li>
-        //     ))}
-        //   </ul> 
-        // </Layout>
+    </div>
+
+    <div className="column">
+    <div className="card">
+  <div className="card-image">
+    <figure className="image is-4by3">
+      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+    </figure>
+  </div>
+  <div className="card-content">
+    <div className="media">
+      <div className="media-left">
+        <figure className="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+        </figure>
+      </div>
+      <div className="media-content">
+        <p className="title is-4">John Smith</p>
+        <p className="subtitle is-6">@johnsmith</p>
+      </div>
+    </div>
+
+    <div className="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+      <a href="#">#css</a> <a href="#">#responsive</a>
+      <br />
+      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+</div>
+</div>
+
+     </Layout>
       )
       
        Index.getInitialProps = async function() {
