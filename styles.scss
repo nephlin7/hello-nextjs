@@ -30,11 +30,24 @@ $input-shadow: none;
 @import "node_modules/bulma/sass/components/navbar.sass";
 @import "node_modules/bulma/sass/layout/_all.sass";
 @import "node_modules/bulma/sass/grid/_all.sass";
-
+@import "node_modules/bulma/sass/components/breadcrumb.sass";
 
 
 
 
 .box-shadow{
     box-shadow: 0 0 20px 0px #e0e0e052;
+}
+.site {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+.site__content{ 
+    flex: 1;
+}
+
+.footer{
+    padding: 2rem;
 }
